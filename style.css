@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(255, 255, 255);
-  width: 1000px;
+  background-color: rgb(15, 14, 68);
+  max-width: 1000px;
+  height: 444px;
   margin: 10px auto;
   text-align: center;
   padding: 10px;
@@ -8,9 +9,10 @@ body {
 }
 
 h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   text-align: center;
-  height: 75px;
+  height: 30px;
 }
 
 span{
@@ -23,23 +25,28 @@ div[id^="row-"] div {
   height: 200px;
   border: 1px solid red;
   float: left;
+  cursor: pointer;
 
 }
 
 div[id^="row-"] div:last-child {
-  border-right: none;
+  border-right: none; 
+  cursor: pointer;
 }
 
 div[id^="row-"] div:first-child {
   border-left: none;
+  cursor: pointer;
 }
 
 div[id="row-1"] div{
   border-top: none;
+  cursor: pointer;
 }
 
 div[id="row-3"] div{
     border-bottom: none;
+    cursor: pointer;
 }
 
 div[id^="row-"] {
@@ -47,6 +54,7 @@ div[id^="row-"] {
   width: 608px;
   box-sizing: border-box;
   overflow: hidden;
+  cursor: pointer;
 }
 
 div.board {
@@ -54,3 +62,15 @@ div.board {
   overflow: hidden;
   margin: 0 auto;
 }
+
+.endgame {
+  display: none;
+  width: 150px;
+  top: 80px; 
+  background-color: whitesmoke;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 2em;
+} 

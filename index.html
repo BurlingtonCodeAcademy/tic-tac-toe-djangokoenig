@@ -8,31 +8,71 @@
   <title>Tic Tac Toe</title>
   <link type="text/css" rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h2>Tic Tac Toe</h2>
-  <div class="board">
+  <h2 style="color:goldenrod">Tic Tac Toe</h2>
+  <div class="board">  
     <div id="row-1">
-      <div id="cell-0"></div>
-      <div id="cell-1"></div>
-      <div id="cell-2"></div>
+      <div id="0"></div>
+      <div id="1"></div>
+      <div id="2"></div>
     </div>
     <div id="row-2">
-      <div id="cell-3"></div>
-      <div id="cell-4"></div>
-      <div id="cell-5"></div>
+      <div id="3"></div>
+      <div id="4"></div>
+      <div id="5"></div>
     </div>
     <div id="row-3">
-      <div id="cell-6"></div>
-      <div id="cell-7"></div>
-      <div id="cell-8"></div>
+      <div id="6"></div>
+      <div id="7"></div>
+      <div id="8"></div>
+    </div>
+    <div id="col-1">
+      <div id="6"></div>
+      <div id="7"></div>
+      <div id="8"></div>
+    </div>
+    <div id="col-2">
+      <div id="1"></div>
+      <div id="4"></div>
+      <div id="7"></div>
+    </div>
+    <div id="col-3">
+      <div id="2"></div>
+      <div id="5"></div>
+      <div id="8"></div>
+    </div>
+    <div id="diag-1">
+      <div id="0"></div>
+      <div id="4"></div>
+      <div id="8"></div>
+    </div> 
+    <div id="diag-2">
+      <div id="2"></div>
+      <div id="4"></div>
+      <div id="6"></div>
+    </div> 
+    <div class="endofgame">
+      <div class="endtext"></div>
     </div>
   </div>
-
+  <div style="height: 20px"></div>
   <div class="status">
-    <button id="start" type="button">Start Game</button>
+    <button id="start" type="button">Start Game
+     <style>
+        button {
+         width: 120px;
+         height: 50px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 20px;
+         background-color: goldenrod;
+         }
+     </style>
   </div>
+  <div style="height: 20px"></div>
+  <div class="timer">
+    <script>
+    </script>
+</div>
   <script src="main.js"></script>
 </body>
-
 </html>
