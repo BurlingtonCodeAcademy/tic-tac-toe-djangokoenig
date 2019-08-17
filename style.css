@@ -19,11 +19,44 @@ td {
 
 table {
   border-collapse: collapse;
+  border-radius: 5%;
   position: absolute;
   left: 50%;
   margin-left: -155px;
-  top: 50px;
+  top: 100px;
+  background: linear-gradient(#C7D3DC,rgb(54, 116, 160)); 
 } 
+
+#replay-button {
+  font-size: 22px;
+  font-weight: 800;
+  width: 144px;
+  background: linear-gradient(rgb(54, 116, 160),#C7D3DC, #C7D3DC); 
+  border-radius: 10%;
+  margin: 3px;
+}
+
+#replay-button:hover {
+  background: linear-gradient(#C7D3DC,rgb(54, 116, 160)); 
+}
+
+#start-button {
+  font-size: 22px;
+  font-weight: 800;
+  width: 144px;
+  background: linear-gradient(rgb(54, 116, 160),#C7D3DC, #C7D3DC); 
+  border-radius: 10%;
+  margin: 3px;
+}
+
+#start-button:hover {
+  background: linear-gradient(#C7D3DC,rgb(54, 116, 160)); 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* REMOVE OUTTER BORDER */
  table tr:first-child td {
@@ -42,11 +75,13 @@ table {
   border-right: 0;
  }
 
+/* POPUP MESSAGE AT END OF GAME */
  .endgame {
     display: none;
     width: 220px;
     top: 120px;
-    background-color: hsla(0, 0%, 100%, 0.6);
+    color: black;
+    background-color: hsla(43, 100%, 83%, 0.6);
     position: absolute;
     left: 50%;
     margin-left: -100px;
@@ -54,8 +89,7 @@ table {
     padding-bottom: 50px;
     text-align: center;
     border-radius: 5px;
-    color: whitesmoke;
-    font-size: 2em;
-    color: black;
-    font-family: Verdana, sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    font-family: sans-serif;
  }
